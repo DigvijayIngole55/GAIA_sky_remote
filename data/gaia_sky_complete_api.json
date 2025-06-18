@@ -1,0 +1,2951 @@
+{
+  "metadata": {
+    "total_methods": 292,
+    "discovery_timestamp": "2025-06-15T13:00:41.109092",
+    "gaia_sky_version": "3.6.8\n1e74ed71e\nLinux hidalgo 6.14.9-arch1-1 x86_64\ntsagrista\n2025-06-02T13:35:59Z",
+    "connection_type": "Py4J JavaGateway",
+    "port": 25333
+  },
+  "methods": {
+    "activateRealTimeFrame": {
+      "name": "activateRealTimeFrame",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "activateSimulationTimeFrame": {
+      "name": "activateSimulationTimeFrame",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "addLineObject": {
+      "name": "addLineObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "addPolyline": {
+      "name": "addPolyline",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "addShapeAroundObject": {
+      "name": "addShapeAroundObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "addTrajectoryLine": {
+      "name": "addTrajectoryLine",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "backupSettings": {
+      "name": "backupSettings",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraCenter": {
+      "name": "cameraCenter",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraForward": {
+      "name": "cameraForward",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraOrientationTransition": {
+      "name": "cameraOrientationTransition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraPitch": {
+      "name": "cameraPitch",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraPositionTransition": {
+      "name": "cameraPositionTransition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraRoll": {
+      "name": "cameraRoll",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraRotate": {
+      "name": "cameraRotate",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraStop": {
+      "name": "cameraStop",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraTransition": {
+      "name": "cameraTransition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraTransitionKm": {
+      "name": "cameraTransitionKm",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraTurn": {
+      "name": "cameraTurn",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cameraYaw": {
+      "name": "cameraYaw",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "clearAllMessages": {
+      "name": "clearAllMessages",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "clearDatasetTransformationMatrix": {
+      "name": "clearDatasetTransformationMatrix",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "clearHeadlineMessage": {
+      "name": "clearHeadlineMessage",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "clearSettingsStack": {
+      "name": "clearSettingsStack",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "clearSubheadMessage": {
+      "name": "clearSubheadMessage",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "collapseGuiComponent": {
+      "name": "collapseGuiComponent",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "collapseUIPane": {
+      "name": "collapseUIPane",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "configureFrameOutput": {
+      "name": "configureFrameOutput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "configureRenderOutput": {
+      "name": "configureRenderOutput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "configureScreenshots": {
+      "name": "configureScreenshots",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "screenshot",
+      "parameters": [],
+      "java_signature": null
+    },
+    "cross3": {
+      "name": "cross3",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "disableGui": {
+      "name": "disableGui",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "disableInput": {
+      "name": "disableInput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "displayImageObject": {
+      "name": "displayImageObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "displayMessageObject": {
+      "name": "displayMessageObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "displayPopupNotification": {
+      "name": "displayPopupNotification",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "recording",
+      "parameters": [],
+      "java_signature": null
+    },
+    "displayTextObject": {
+      "name": "displayTextObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "dot3": {
+      "name": "dot3",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "eclipticToEquatorial": {
+      "name": "eclipticToEquatorial",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "eclipticToInternalCartesian": {
+      "name": "eclipticToInternalCartesian",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "enableGui": {
+      "name": "enableGui",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "enableInput": {
+      "name": "enableInput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "equals": {
+      "name": "equals",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "equatorialCartesianToInternalCartesian": {
+      "name": "equatorialCartesianToInternalCartesian",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "equatorialToEcliptic": {
+      "name": "equatorialToEcliptic",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "equatorialToGalactic": {
+      "name": "equatorialToGalactic",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "equatorialToInternalCartesian": {
+      "name": "equatorialToInternalCartesian",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "error": {
+      "name": "error",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "expandGuiComponent": {
+      "name": "expandGuiComponent",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "expandUIPane": {
+      "name": "expandUIPane",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "forceUpdateScene": {
+      "name": "forceUpdateScene",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "galacticToEquatorial": {
+      "name": "galacticToEquatorial",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "galacticToInternalCartesian": {
+      "name": "galacticToInternalCartesian",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getAssetsLocation": {
+      "name": "getAssetsLocation",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getBuildString": {
+      "name": "getBuildString",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCamcorderFps": {
+      "name": "getCamcorderFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCameraDirection": {
+      "name": "getCameraDirection",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCameraOrientationQuaternion": {
+      "name": "getCameraOrientationQuaternion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCameraPosition": {
+      "name": "getCameraPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCameraSpeed": {
+      "name": "getCameraSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCameraUp": {
+      "name": "getCameraUp",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getClass": {
+      "name": "getClass",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getClosestObjectToCamera": {
+      "name": "getClosestObjectToCamera",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getComponentTypeVisibility": {
+      "name": "getComponentTypeVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getConfigDir": {
+      "name": "getConfigDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getCurrentFrameNumber": {
+      "name": "getCurrentFrameNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDataDir": {
+      "name": "getDataDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDefaultCameraDir": {
+      "name": "getDefaultCameraDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDefaultFramesDir": {
+      "name": "getDefaultFramesDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDefaultMappingsDir": {
+      "name": "getDefaultMappingsDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDefaultMusicDir": {
+      "name": "getDefaultMusicDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDefaultScreenshotsDir": {
+      "name": "getDefaultScreenshotsDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "screenshot",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getDistanceTo": {
+      "name": "getDistanceTo",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getEntity": {
+      "name": "getEntity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getForceDisplayLabel": {
+      "name": "getForceDisplayLabel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "recording",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getFrameNumber": {
+      "name": "getFrameNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getFrameOutputFps": {
+      "name": "getFrameOutputFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getGuiScaleFactor": {
+      "name": "getGuiScaleFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getInternalUnitToMeterConversion": {
+      "name": "getInternalUnitToMeterConversion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getLineObject": {
+      "name": "getLineObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getLocalDataDir": {
+      "name": "getLocalDataDir",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getMeterToInternalUnitConversion": {
+      "name": "getMeterToInternalUnitConversion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getMinStarOpacity": {
+      "name": "getMinStarOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObject": {
+      "name": "getObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObjectPosition": {
+      "name": "getObjectPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObjectPredictedPosition": {
+      "name": "getObjectPredictedPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObjectRadius": {
+      "name": "getObjectRadius",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObjectScreenCoordinates": {
+      "name": "getObjectScreenCoordinates",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getObjectVisibility": {
+      "name": "getObjectVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getPointSize": {
+      "name": "getPointSize",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getPositionAndSizeGui": {
+      "name": "getPositionAndSizeGui",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "positioning",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getProperMotionsMaxNumber": {
+      "name": "getProperMotionsMaxNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getRefSysTransform": {
+      "name": "getRefSysTransform",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getRenderOutputFps": {
+      "name": "getRenderOutputFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getScreenHeight": {
+      "name": "getScreenHeight",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getScreenWidth": {
+      "name": "getScreenWidth",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getSimulationTime": {
+      "name": "getSimulationTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getSimulationTimeArr": {
+      "name": "getSimulationTimeArr",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getStarBaseOpacity": {
+      "name": "getStarBaseOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getStarBrightness": {
+      "name": "getStarBrightness",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getStarMinOpacity": {
+      "name": "getStarMinOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getStarParameters": {
+      "name": "getStarParameters",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getStarSize": {
+      "name": "getStarSize",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getVersion": {
+      "name": "getVersion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "getVersionNumber": {
+      "name": "getVersionNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "goToObject": {
+      "name": "goToObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "goToObjectInstant": {
+      "name": "goToObjectInstant",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "goToObjectSmooth": {
+      "name": "goToObjectSmooth",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "hasDataset": {
+      "name": "hasDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "hashCode": {
+      "name": "hashCode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "hideDataset": {
+      "name": "hideDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "visual",
+      "parameters": [],
+      "java_signature": null
+    },
+    "highlightDataset": {
+      "name": "highlightDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "internalCartesianToEquatorial": {
+      "name": "internalCartesianToEquatorial",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "internalUnitsToKilometres": {
+      "name": "internalUnitsToKilometres",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "internalUnitsToMetres": {
+      "name": "internalUnitsToMetres",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "internalUnitsToParsecs": {
+      "name": "internalUnitsToParsecs",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "isFrameOutputActive": {
+      "name": "isFrameOutputActive",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "isRenderOutputActive": {
+      "name": "isRenderOutputActive",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "isSimulationTimeOn": {
+      "name": "isSimulationTimeOn",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "kilometersToInternalUnits": {
+      "name": "kilometersToInternalUnits",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "kilometresToInternalUnits": {
+      "name": "kilometresToInternalUnits",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "landAtObjectLocation": {
+      "name": "landAtObjectLocation",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "landOnObject": {
+      "name": "landOnObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "listDatasets": {
+      "name": "listDatasets",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadDataset": {
+      "name": "loadDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadJsonCatalog": {
+      "name": "loadJsonCatalog",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadJsonDataset": {
+      "name": "loadJsonDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadParticleDataset": {
+      "name": "loadParticleDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadStarClusterDataset": {
+      "name": "loadStarClusterDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadStarDataset": {
+      "name": "loadStarDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "loadVariableStarDataset": {
+      "name": "loadVariableStarDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "log": {
+      "name": "log",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "maximizeInterfaceWindow": {
+      "name": "maximizeInterfaceWindow",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "metresToInternalUnits": {
+      "name": "metresToInternalUnits",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "minimizeInterfaceWindow": {
+      "name": "minimizeInterfaceWindow",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "notify": {
+      "name": "notify",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "notifyAll": {
+      "name": "notifyAll",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "parkCameraRunnable": {
+      "name": "parkCameraRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "parkRunnable": {
+      "name": "parkRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "parkSceneRunnable": {
+      "name": "parkSceneRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "parsecsToInternalUnits": {
+      "name": "parsecsToInternalUnits",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "playCameraPath": {
+      "name": "playCameraPath",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "pointAtSkyCoordinate": {
+      "name": "pointAtSkyCoordinate",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "postRunnable": {
+      "name": "postRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "preloadTexture": {
+      "name": "preloadTexture",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "preloadTextures": {
+      "name": "preloadTextures",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "print": {
+      "name": "print",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "quit": {
+      "name": "quit",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "refreshAllOrbits": {
+      "name": "refreshAllOrbits",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "refreshObjectOrbit": {
+      "name": "refreshObjectOrbit",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeAllObjects": {
+      "name": "removeAllObjects",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeCameraTrackingObject": {
+      "name": "removeCameraTrackingObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeDataset": {
+      "name": "removeDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeModelObject": {
+      "name": "removeModelObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeObject": {
+      "name": "removeObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeObjectCoordinatesProvider": {
+      "name": "removeObjectCoordinatesProvider",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeObjects": {
+      "name": "removeObjects",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "removeRunnable": {
+      "name": "removeRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "resetImageSequenceNumber": {
+      "name": "resetImageSequenceNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "resetUserInterface": {
+      "name": "resetUserInterface",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "restoreSettings": {
+      "name": "restoreSettings",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "rotate2": {
+      "name": "rotate2",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "rotate3": {
+      "name": "rotate3",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "runCameraPath": {
+      "name": "runCameraPath",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "runCameraRecording": {
+      "name": "runCameraRecording",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "saveScreenshot": {
+      "name": "saveScreenshot",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "screenshot",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setAmbientLight": {
+      "name": "setAmbientLight",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setBackBufferScale": {
+      "name": "setBackBufferScale",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setBloom": {
+      "name": "setBloom",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setBrightnessLevel": {
+      "name": "setBrightnessLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCamcorderFps": {
+      "name": "setCamcorderFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraCenterFocus": {
+      "name": "setCameraCenterFocus",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraDirection": {
+      "name": "setCameraDirection",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraDirectionEquatorial": {
+      "name": "setCameraDirectionEquatorial",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraDirectionGalactic": {
+      "name": "setCameraDirectionGalactic",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraFocus": {
+      "name": "setCameraFocus",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraFocusInstant": {
+      "name": "setCameraFocusInstant",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraFocusInstantAndGo": {
+      "name": "setCameraFocusInstantAndGo",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraFree": {
+      "name": "setCameraFree",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraLock": {
+      "name": "setCameraLock",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraOrientationLock": {
+      "name": "setCameraOrientationLock",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraOrientationQuaternion": {
+      "name": "setCameraOrientationQuaternion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraPosition": {
+      "name": "setCameraPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraPositionAndFocus": {
+      "name": "setCameraPositionAndFocus",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraPostion": {
+      "name": "setCameraPostion",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraRecorderFps": {
+      "name": "setCameraRecorderFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraRotationSpeed": {
+      "name": "setCameraRotationSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraSpeed": {
+      "name": "setCameraSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraSpeedLimit": {
+      "name": "setCameraSpeedLimit",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraState": {
+      "name": "setCameraState",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraStateAndTime": {
+      "name": "setCameraStateAndTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraTrackingObject": {
+      "name": "setCameraTrackingObject",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraTurningSpeed": {
+      "name": "setCameraTurningSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCameraUp": {
+      "name": "setCameraUp",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setChromaticAberration": {
+      "name": "setChromaticAberration",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCinematicCamera": {
+      "name": "setCinematicCamera",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setClosestCrosshairVisibility": {
+      "name": "setClosestCrosshairVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setComponentTypeVisibility": {
+      "name": "setComponentTypeVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setContrastLevel": {
+      "name": "setContrastLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCrosshairVisibility": {
+      "name": "setCrosshairVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCubemapMode": {
+      "name": "setCubemapMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCubemapProjection": {
+      "name": "setCubemapProjection",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setCubemapResolution": {
+      "name": "setCubemapResolution",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setDatasetHighlightAllVisible": {
+      "name": "setDatasetHighlightAllVisible",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setDatasetHighlightSizeFactor": {
+      "name": "setDatasetHighlightSizeFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setDatasetPointSizeMultiplier": {
+      "name": "setDatasetPointSizeMultiplier",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setDatasetTransformationMatrix": {
+      "name": "setDatasetTransformationMatrix",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setExposureToneMappingLevel": {
+      "name": "setExposureToneMappingLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setFocusCrosshairVisibility": {
+      "name": "setFocusCrosshairVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setForceDisplayLabel": {
+      "name": "setForceDisplayLabel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "recording",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setFov": {
+      "name": "setFov",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setFrameOutput": {
+      "name": "setFrameOutput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setFrameOutputMode": {
+      "name": "setFrameOutputMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setGammaCorrectionLevel": {
+      "name": "setGammaCorrectionLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setGuiPosition": {
+      "name": "setGuiPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "positioning",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setGuiScrollPosition": {
+      "name": "setGuiScrollPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "positioning",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setHDRToneMappingType": {
+      "name": "setHDRToneMappingType",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setHeadlineMessage": {
+      "name": "setHeadlineMessage",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setHomeCrosshairVisibility": {
+      "name": "setHomeCrosshairVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setHueLevel": {
+      "name": "setHueLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setIndexOfRefraction": {
+      "name": "setIndexOfRefraction",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setLabelColor": {
+      "name": "setLabelColor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setLabelSizeFactor": {
+      "name": "setLabelSizeFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setLensFlare": {
+      "name": "setLensFlare",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setLimitFps": {
+      "name": "setLimitFps",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setLineWidthFactor": {
+      "name": "setLineWidthFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setMaximumSimulationTime": {
+      "name": "setMaximumSimulationTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setMinStarOpacity": {
+      "name": "setMinStarOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setMinimapVisibility": {
+      "name": "setMinimapVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setMotionBlur": {
+      "name": "setMotionBlur",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectCoordinatesProvider": {
+      "name": "setObjectCoordinatesProvider",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectPosition": {
+      "name": "setObjectPosition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectQuaternionNlerpOrientation": {
+      "name": "setObjectQuaternionNlerpOrientation",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectQuaternionSlerpOrientation": {
+      "name": "setObjectQuaternionSlerpOrientation",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectSizeScaling": {
+      "name": "setObjectSizeScaling",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setObjectVisibility": {
+      "name": "setObjectVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setOrbitCoordinatesScaling": {
+      "name": "setOrbitCoordinatesScaling",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setOrbitSolidAngleThreshold": {
+      "name": "setOrbitSolidAngleThreshold",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setOrthosphereViewMode": {
+      "name": "setOrthosphereViewMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setPanoramaMode": {
+      "name": "setPanoramaMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setPlanetariumMode": {
+      "name": "setPlanetariumMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setPointSize": {
+      "name": "setPointSize",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProjectionFov": {
+      "name": "setProjectionFov",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProjectionPitch": {
+      "name": "setProjectionPitch",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProjectionRoll": {
+      "name": "setProjectionRoll",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProjectionYaw": {
+      "name": "setProjectionYaw",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProperMotionsArrowheads": {
+      "name": "setProperMotionsArrowheads",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProperMotionsColorMode": {
+      "name": "setProperMotionsColorMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProperMotionsLengthFactor": {
+      "name": "setProperMotionsLengthFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProperMotionsMaxNumber": {
+      "name": "setProperMotionsMaxNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setProperMotionsNumberFactor": {
+      "name": "setProperMotionsNumberFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setReprojectionMode": {
+      "name": "setReprojectionMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setRotationCameraSpeed": {
+      "name": "setRotationCameraSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setSaturationLevel": {
+      "name": "setSaturationLevel",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setScreenshotsMode": {
+      "name": "setScreenshotsMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "screenshot",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setSimulationPace": {
+      "name": "setSimulationPace",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setSimulationTime": {
+      "name": "setSimulationTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setSmoothLodTransitions": {
+      "name": "setSmoothLodTransitions",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarBaseOpacity": {
+      "name": "setStarBaseOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarBrightness": {
+      "name": "setStarBrightness",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarBrightnessPower": {
+      "name": "setStarBrightnessPower",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarGlow": {
+      "name": "setStarGlow",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarGlowFactor": {
+      "name": "setStarGlowFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarGlowOverObjects": {
+      "name": "setStarGlowOverObjects",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarGroupBillboard": {
+      "name": "setStarGroupBillboard",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarGroupNearestNumber": {
+      "name": "setStarGroupNearestNumber",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarMinOpacity": {
+      "name": "setStarMinOpacity",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarSize": {
+      "name": "setStarSize",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStarTextureIndex": {
+      "name": "setStarTextureIndex",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStereoscopicMode": {
+      "name": "setStereoscopicMode",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setStereoscopicProfile": {
+      "name": "setStereoscopicProfile",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setSubheadMessage": {
+      "name": "setSubheadMessage",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setTargetTime": {
+      "name": "setTargetTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setTimeWarp": {
+      "name": "setTimeWarp",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setTurningCameraSpeed": {
+      "name": "setTurningCameraSpeed",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setUnfilteredProperMotionsNumberFactor": {
+      "name": "setUnfilteredProperMotionsNumberFactor",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "setVisibility": {
+      "name": "setVisibility",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "showDataset": {
+      "name": "showDataset",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "visual",
+      "parameters": [],
+      "java_signature": null
+    },
+    "sleep": {
+      "name": "sleep",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "sleepFrames": {
+      "name": "sleepFrames",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "startRecordingCameraPath": {
+      "name": "startRecordingCameraPath",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "startSimulationTime": {
+      "name": "startSimulationTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "stopRecordingCameraPath": {
+      "name": "stopRecordingCameraPath",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "camera",
+      "parameters": [],
+      "java_signature": null
+    },
+    "stopSimulationTime": {
+      "name": "stopSimulationTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "takeScreenshot": {
+      "name": "takeScreenshot",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "screenshot",
+      "parameters": [],
+      "java_signature": null
+    },
+    "timeTransition": {
+      "name": "timeTransition",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "toString": {
+      "name": "toString",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "unparkRunnable": {
+      "name": "unparkRunnable",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "unsetTargetTime": {
+      "name": "unsetTargetTime",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "time",
+      "parameters": [],
+      "java_signature": null
+    },
+    "wait": {
+      "name": "wait",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "waitFocus": {
+      "name": "waitFocus",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "navigation",
+      "parameters": [],
+      "java_signature": null
+    },
+    "waitForEnter": {
+      "name": "waitForEnter",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    },
+    "waitForInput": {
+      "name": "waitForInput",
+      "type": "<class 'py4j.java_gateway.JavaMember'>",
+      "callable": true,
+      "description": "",
+      "category": "other",
+      "parameters": [],
+      "java_signature": null
+    }
+  },
+  "categories": {
+    "navigation": [
+      "addLineObject",
+      "addShapeAroundObject",
+      "displayImageObject",
+      "displayMessageObject",
+      "displayTextObject",
+      "getClosestObjectToCamera",
+      "getLineObject",
+      "getObject",
+      "getObjectPosition",
+      "getObjectPredictedPosition",
+      "getObjectRadius",
+      "getObjectScreenCoordinates",
+      "getObjectVisibility",
+      "goToObject",
+      "goToObjectInstant",
+      "goToObjectSmooth",
+      "landAtObjectLocation",
+      "landOnObject",
+      "refreshObjectOrbit",
+      "removeAllObjects",
+      "removeCameraTrackingObject",
+      "removeModelObject",
+      "removeObject",
+      "removeObjectCoordinatesProvider",
+      "removeObjects",
+      "setCameraCenterFocus",
+      "setCameraFocus",
+      "setCameraFocusInstant",
+      "setCameraFocusInstantAndGo",
+      "setCameraPositionAndFocus",
+      "setCameraTrackingObject",
+      "setFocusCrosshairVisibility",
+      "setObjectCoordinatesProvider",
+      "setObjectPosition",
+      "setObjectQuaternionNlerpOrientation",
+      "setObjectQuaternionSlerpOrientation",
+      "setObjectSizeScaling",
+      "setObjectVisibility",
+      "setStarGlowOverObjects",
+      "waitFocus"
+    ],
+    "camera": [
+      "cameraCenter",
+      "cameraForward",
+      "cameraOrientationTransition",
+      "cameraPitch",
+      "cameraPositionTransition",
+      "cameraRoll",
+      "cameraRotate",
+      "cameraStop",
+      "cameraTransition",
+      "cameraTransitionKm",
+      "cameraTurn",
+      "cameraYaw",
+      "getCameraDirection",
+      "getCameraOrientationQuaternion",
+      "getCameraPosition",
+      "getCameraSpeed",
+      "getCameraUp",
+      "getDefaultCameraDir",
+      "parkCameraRunnable",
+      "playCameraPath",
+      "runCameraPath",
+      "runCameraRecording",
+      "setCameraDirection",
+      "setCameraDirectionEquatorial",
+      "setCameraDirectionGalactic",
+      "setCameraFree",
+      "setCameraLock",
+      "setCameraOrientationLock",
+      "setCameraOrientationQuaternion",
+      "setCameraPosition",
+      "setCameraPostion",
+      "setCameraRecorderFps",
+      "setCameraRotationSpeed",
+      "setCameraSpeed",
+      "setCameraSpeedLimit",
+      "setCameraState",
+      "setCameraStateAndTime",
+      "setCameraTurningSpeed",
+      "setCameraUp",
+      "setCinematicCamera",
+      "setOrthosphereViewMode",
+      "setRotationCameraSpeed",
+      "setTurningCameraSpeed",
+      "startRecordingCameraPath",
+      "stopRecordingCameraPath"
+    ],
+    "time": [
+      "activateRealTimeFrame",
+      "activateSimulationTimeFrame",
+      "getSimulationTime",
+      "getSimulationTimeArr",
+      "isSimulationTimeOn",
+      "setMaximumSimulationTime",
+      "setSimulationPace",
+      "setSimulationTime",
+      "setTargetTime",
+      "setTimeWarp",
+      "startSimulationTime",
+      "stopSimulationTime",
+      "timeTransition",
+      "unsetTargetTime"
+    ],
+    "visual": [
+      "hideDataset",
+      "showDataset"
+    ],
+    "screenshot": [
+      "configureScreenshots",
+      "getDefaultScreenshotsDir",
+      "saveScreenshot",
+      "setScreenshotsMode",
+      "takeScreenshot"
+    ],
+    "tracking": [],
+    "landing": [],
+    "positioning": [
+      "getPositionAndSizeGui",
+      "setGuiPosition",
+      "setGuiScrollPosition"
+    ],
+    "recording": [
+      "displayPopupNotification",
+      "getForceDisplayLabel",
+      "setForceDisplayLabel"
+    ],
+    "other": [
+      "addPolyline",
+      "addTrajectoryLine",
+      "backupSettings",
+      "clearAllMessages",
+      "clearDatasetTransformationMatrix",
+      "clearHeadlineMessage",
+      "clearSettingsStack",
+      "clearSubheadMessage",
+      "collapseGuiComponent",
+      "collapseUIPane",
+      "configureFrameOutput",
+      "configureRenderOutput",
+      "cross3",
+      "disableGui",
+      "disableInput",
+      "dot3",
+      "eclipticToEquatorial",
+      "eclipticToInternalCartesian",
+      "enableGui",
+      "enableInput",
+      "equals",
+      "equatorialCartesianToInternalCartesian",
+      "equatorialToEcliptic",
+      "equatorialToGalactic",
+      "equatorialToInternalCartesian",
+      "error",
+      "expandGuiComponent",
+      "expandUIPane",
+      "forceUpdateScene",
+      "galacticToEquatorial",
+      "galacticToInternalCartesian",
+      "getAssetsLocation",
+      "getBuildString",
+      "getCamcorderFps",
+      "getClass",
+      "getComponentTypeVisibility",
+      "getConfigDir",
+      "getCurrentFrameNumber",
+      "getDataDir",
+      "getDefaultFramesDir",
+      "getDefaultMappingsDir",
+      "getDefaultMusicDir",
+      "getDistanceTo",
+      "getEntity",
+      "getFrameNumber",
+      "getFrameOutputFps",
+      "getGuiScaleFactor",
+      "getInternalUnitToMeterConversion",
+      "getLocalDataDir",
+      "getMeterToInternalUnitConversion",
+      "getMinStarOpacity",
+      "getPointSize",
+      "getProperMotionsMaxNumber",
+      "getRefSysTransform",
+      "getRenderOutputFps",
+      "getScreenHeight",
+      "getScreenWidth",
+      "getStarBaseOpacity",
+      "getStarBrightness",
+      "getStarMinOpacity",
+      "getStarParameters",
+      "getStarSize",
+      "getVersion",
+      "getVersionNumber",
+      "hasDataset",
+      "hashCode",
+      "highlightDataset",
+      "internalCartesianToEquatorial",
+      "internalUnitsToKilometres",
+      "internalUnitsToMetres",
+      "internalUnitsToParsecs",
+      "isFrameOutputActive",
+      "isRenderOutputActive",
+      "kilometersToInternalUnits",
+      "kilometresToInternalUnits",
+      "listDatasets",
+      "loadDataset",
+      "loadJsonCatalog",
+      "loadJsonDataset",
+      "loadParticleDataset",
+      "loadStarClusterDataset",
+      "loadStarDataset",
+      "loadVariableStarDataset",
+      "log",
+      "maximizeInterfaceWindow",
+      "metresToInternalUnits",
+      "minimizeInterfaceWindow",
+      "notify",
+      "notifyAll",
+      "parkRunnable",
+      "parkSceneRunnable",
+      "parsecsToInternalUnits",
+      "pointAtSkyCoordinate",
+      "postRunnable",
+      "preloadTexture",
+      "preloadTextures",
+      "print",
+      "quit",
+      "refreshAllOrbits",
+      "removeDataset",
+      "removeRunnable",
+      "resetImageSequenceNumber",
+      "resetUserInterface",
+      "restoreSettings",
+      "rotate2",
+      "rotate3",
+      "setAmbientLight",
+      "setBackBufferScale",
+      "setBloom",
+      "setBrightnessLevel",
+      "setCamcorderFps",
+      "setChromaticAberration",
+      "setClosestCrosshairVisibility",
+      "setComponentTypeVisibility",
+      "setContrastLevel",
+      "setCrosshairVisibility",
+      "setCubemapMode",
+      "setCubemapProjection",
+      "setCubemapResolution",
+      "setDatasetHighlightAllVisible",
+      "setDatasetHighlightSizeFactor",
+      "setDatasetPointSizeMultiplier",
+      "setDatasetTransformationMatrix",
+      "setExposureToneMappingLevel",
+      "setFov",
+      "setFrameOutput",
+      "setFrameOutputMode",
+      "setGammaCorrectionLevel",
+      "setHDRToneMappingType",
+      "setHeadlineMessage",
+      "setHomeCrosshairVisibility",
+      "setHueLevel",
+      "setIndexOfRefraction",
+      "setLabelColor",
+      "setLabelSizeFactor",
+      "setLensFlare",
+      "setLimitFps",
+      "setLineWidthFactor",
+      "setMinStarOpacity",
+      "setMinimapVisibility",
+      "setMotionBlur",
+      "setOrbitCoordinatesScaling",
+      "setOrbitSolidAngleThreshold",
+      "setPanoramaMode",
+      "setPlanetariumMode",
+      "setPointSize",
+      "setProjectionFov",
+      "setProjectionPitch",
+      "setProjectionRoll",
+      "setProjectionYaw",
+      "setProperMotionsArrowheads",
+      "setProperMotionsColorMode",
+      "setProperMotionsLengthFactor",
+      "setProperMotionsMaxNumber",
+      "setProperMotionsNumberFactor",
+      "setReprojectionMode",
+      "setSaturationLevel",
+      "setSmoothLodTransitions",
+      "setStarBaseOpacity",
+      "setStarBrightness",
+      "setStarBrightnessPower",
+      "setStarGlow",
+      "setStarGlowFactor",
+      "setStarGroupBillboard",
+      "setStarGroupNearestNumber",
+      "setStarMinOpacity",
+      "setStarSize",
+      "setStarTextureIndex",
+      "setStereoscopicMode",
+      "setStereoscopicProfile",
+      "setSubheadMessage",
+      "setUnfilteredProperMotionsNumberFactor",
+      "setVisibility",
+      "sleep",
+      "sleepFrames",
+      "toString",
+      "unparkRunnable",
+      "wait",
+      "waitForEnter",
+      "waitForInput"
+    ]
+  }
+}
