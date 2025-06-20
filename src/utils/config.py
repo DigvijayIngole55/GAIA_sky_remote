@@ -9,7 +9,7 @@ import logging
 # Speech Recognition Configuration
 WHISPER_MODEL_SIZE = "base"  # tiny, base, small, medium, large
 SAMPLE_RATE = 16000  # Hz
-CHUNK_DURATION = 3.0  # seconds (reduced for faster response)
+CHUNK_DURATION = 4.0  # seconds (longer to capture full ASTRO commands)
 MIN_SPEECH_LENGTH = 1  # minimum words to process (reduced to capture short commands)
 
 # LM Studio Configuration
@@ -32,6 +32,13 @@ AUDIO_FRAMES_PER_BUFFER = 1024
 LOG_LEVEL = "INFO"
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
+# TTS Configuration
+TTS_ENABLED = True
+TTS_ENGINE = "pyttsx3"  # Currently only pyttsx3 supported
+TTS_RATE = 180  # words per minute (normal speech)
+TTS_URGENT_RATE = 220  # words per minute (urgent commands)
+TTS_VOICE_INDEX = 0  # system voice selection (0 = default)
+
 # Environment Variable Overrides
 def get_env_config():
     """Get configuration from environment variables"""
@@ -44,10 +51,15 @@ def get_env_config():
 
 # Available Actions
 AVAILABLE_ACTIONS = [
+    # Phase 1: Core methods (18 methods)
     'go_to', 'land_on', 'track', 'set_time', 'take_screenshot', 
     'explore', 'orbit', 'zoom_in', 'zoom_out', 'speed_up', 
     'slow_down', 'free_camera', 'stop_camera', 'back_to_space', 
-    'tour', 'cinematic_journey', 'multi_step', 'stream_tour'
+    'tour', 'cinematic_journey', 'multi_step', 'stream_tour',
+    
+    # Phase 2: Advanced new methods (7 methods)
+    'camera_transition', 'draw_path', 'add_marker', 'time_travel',
+    'pitch_camera', 'roll_camera', 'smooth_orientation'
 ]
 
 # Common Celestial Objects

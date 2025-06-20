@@ -18,12 +18,16 @@ try:
         WHISPER_MODEL_SIZE, SAMPLE_RATE, CHUNK_DURATION, 
         MIN_SPEECH_LENGTH, AUDIO_CHANNELS, AUDIO_FRAMES_PER_BUFFER
     )
+    from .tts_engine import CoquiTTSEngine
+    from .audio_coordinator import get_audio_state_manager
 except ImportError:
     # Fallback for direct execution
     from utils.config import (
         WHISPER_MODEL_SIZE, SAMPLE_RATE, CHUNK_DURATION, 
         MIN_SPEECH_LENGTH, AUDIO_CHANNELS, AUDIO_FRAMES_PER_BUFFER
     )
+    from tts_engine import CoquiTTSEngine
+    from audio_coordinator import get_audio_state_manager
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -65,8 +69,16 @@ class UniversalSpeechRecognizer:
         self.stream = None
         self.model = None
         self.command_callback = None
+        self.tts_engine = None  # TTS for voice cues
+        
+        # Audio coordination
+        self.audio_manager = get_audio_state_manager()
         
         logger.info("🎤 Astro Speech Recognizer initialized for direct commands")
+    
+    def set_tts_engine(self, tts_engine):
+        """Set TTS engine for voice cues"""
+        self.tts_engine = tts_engine
     
     def load_model(self) -> bool:
         """Load Whisper model"""
@@ -134,35 +146,9 @@ class UniversalSpeechRecognizer:
             logger.error(f"❌ Failed to initialize audio: {e}")
             return False
     
-    def detect_voice_activity(self, audio_data: bytes, threshold: float = 0.005) -> bool:
-        """Improved voice activity detection with multiple checks"""
-        try:
-            # Convert to numpy array
-            audio_np = np.frombuffer(audio_data, dtype=np.int16).astype(np.float32)
-            audio_np = audio_np / 32768.0
-            
-            # Calculate RMS energy (lowered threshold)
-            rms = np.sqrt(np.mean(audio_np ** 2))
-            
-            # Calculate zero crossing rate (speech has higher ZCR than noise)
-            zero_crossings = np.sum(np.diff(np.sign(audio_np)) != 0)
-            zcr = zero_crossings / len(audio_np)
-            
-            # Check both energy and zero crossing rate
-            has_energy = rms > threshold
-            has_speech_characteristics = zcr > 0.01  # Speech typically has ZCR > 0.01
-            
-            # Log activity detection for debugging
-            if has_energy:
-                logger.debug(f"🔊 Voice activity - RMS: {rms:.4f}, ZCR: {zcr:.4f}")
-            
-            return has_energy and has_speech_characteristics
-        except Exception as e:
-            logger.error(f"Voice activity detection error: {e}")
-            return True  # Default to processing if detection fails
     
     def record_audio_chunk(self) -> Optional[bytes]:
-        """Record a chunk of audio with voice activity detection"""
+        """Record a chunk of audio - let Whisper handle silence detection"""
         try:
             frames = []
             frames_needed = int(self.sample_rate * self.chunk_duration / AUDIO_FRAMES_PER_BUFFER)
@@ -172,11 +158,6 @@ class UniversalSpeechRecognizer:
                 frames.append(data)
             
             audio_data = b''.join(frames)
-            
-            # Check if there's actual voice activity
-            if not self.detect_voice_activity(audio_data):
-                return None  # Skip silent audio
-            
             return audio_data
         except Exception as e:
             logger.error(f"❌ Error recording audio: {e}")
@@ -232,19 +213,24 @@ class UniversalSpeechRecognizer:
             # Preprocess audio for better recognition
             audio_np = self.preprocess_audio(audio_np)
             
-            # Transcribe with Whisper with more aggressive settings
+            # Transcribe with Whisper - original working settings
             result = self.model.transcribe(
                 audio_np, 
                 language="en",
                 word_timestamps=False,
-                no_speech_threshold=0.3,  # More lenient no-speech detection
-                logprob_threshold=-1.0,   # More lenient probability threshold
+                no_speech_threshold=0.3,  # Original working value
+                logprob_threshold=-1.0,   
                 compression_ratio_threshold=2.4,
-                temperature=0.0  # Deterministic output
+                temperature=0.0
             )
             text = result["text"].strip()
             
             if text:
+                # Check for Whisper hallucinations (repetitive phrases)
+                if self.is_hallucination(text):
+                    logger.info(f"🚫 Detected hallucination: '{text[:50]}...' - ignoring")
+                    return None
+                
                 logger.info(f"🎤 Transcribed: '{text}' (confidence: {result.get('segments', [{}])[0].get('avg_logprob', 'N/A') if result.get('segments') else 'N/A'})")
                 return text.lower()
             else:
@@ -254,6 +240,44 @@ class UniversalSpeechRecognizer:
         except Exception as e:
             logger.error(f"❌ Transcription error: {e}")
             return None
+    
+    def is_hallucination(self, text: str) -> bool:
+        """Detect if text is a Whisper hallucination (repetitive phrases)"""
+        if not text or len(text) < 20:
+            return False
+        
+        # Check for repetitive patterns
+        words = text.split()
+        if len(words) < 4:
+            return False
+        
+        # Check if more than 50% of words are repetitive
+        word_counts = {}
+        for word in words:
+            word_counts[word] = word_counts.get(word, 0) + 1
+        
+        max_repeats = max(word_counts.values())
+        repetitive_ratio = max_repeats / len(words)
+        
+        # If more than 40% repetition, likely hallucination
+        if repetitive_ratio > 0.4:
+            return True
+        
+        # Check for specific hallucination patterns
+        hallucination_patterns = [
+            "and then the",
+            "the sound of the sound",
+            "and the next one",
+            "and then and then",
+            "the the the"
+        ]
+        
+        text_lower = text.lower()
+        for pattern in hallucination_patterns:
+            if pattern in text_lower:
+                return True
+        
+        return False
     
     def is_valid_command(self, text: str) -> bool:
         """Check if transcribed text looks like a valid space command"""
@@ -274,7 +298,7 @@ class UniversalSpeechRecognizer:
     
     def process_command(self, text: str) -> bool:
         """
-        Process transcribed text as direct commands
+        Process transcribed text as direct commands (original working version)
         
         Args:
             text: Transcribed speech text
@@ -314,7 +338,7 @@ class UniversalSpeechRecognizer:
         return False
     
     def listen_continuously(self):
-        """Main listening loop with voice activity detection and indicators"""
+        """Main listening loop with audio coordination to prevent feedback"""
         logger.info("🎧 Starting continuous listening for direct commands")
         logger.info("💡 Say commands directly to control Gaia Sky")
         logger.info("💡 Example: 'Take me to Mars'")
@@ -324,33 +348,69 @@ class UniversalSpeechRecognizer:
         
         while self.is_listening:
             try:
+                # Check if we're allowed to listen (not during TTS playback)
+                if not self.audio_manager.is_listening_allowed():
+                    # TTS is speaking, pause listening
+                    if not hasattr(self, '_paused_logged'):
+                        logger.debug("🔇 Pausing speech recognition during TTS")
+                        self.audio_manager.signal_speech_paused()
+                        self._paused_logged = True
+                    
+                    # Wait for permission to resume listening with adequate timeout
+                    self.audio_manager.request_listening_permission(timeout=2.0)
+                    # Don't log errors - just continue
+                    time.sleep(0.1)
+                    continue
+                
+                # We have permission to listen
+                if hasattr(self, '_paused_logged'):
+                    logger.debug("🎧 Speech recognition resumed")
+                    delattr(self, '_paused_logged')
+                
                 # Show ready indicator every 10 seconds
                 current_time = time.time()
                 if current_time - last_ready_time > 10:
                     print("🟢 READY - Say your command now...")
                     last_ready_time = current_time
                 
-                # Record audio chunk (with voice activity detection)
+                # Record audio chunk - only if listening is allowed
+                if not self.audio_manager.is_listening_allowed():
+                    time.sleep(0.1)
+                    continue
+                
                 audio_data = self.record_audio_chunk()
                 if not audio_data:
-                    # No voice activity detected, continue listening
+                    # Error recording, try again
                     time.sleep(0.1)
                     continue
                 
                 # Voice detected! Show processing indicator
                 print("🔴 PROCESSING SPEECH...")
                 
-                # Transcribe audio
-                text = self.transcribe_audio(audio_data)
-                if text:
-                    print(f"🎤 Heard: '{text}'")
-                    self.process_command(text)
-                    print("🟢 READY - Say your next command...")
-                    last_ready_time = time.time()
-                else:
-                    print("🟡 No clear speech detected, try again...")
-                    print("🟢 READY - Say your command now...")
-                    last_ready_time = time.time()
+                # Signal processing started
+                self.audio_manager.signal_processing_started()
+                
+                try:
+                    # Transcribe audio
+                    text = self.transcribe_audio(audio_data)
+                    if text:
+                        print(f"🎤 Heard: '{text}'")
+                        # Process command and only give confirmation if successful
+                        command_processed = self.process_command(text)
+                        if command_processed:
+                            # NOTE: TTS feedback is now handled within the command execution
+                            # No additional "got_it" confirmation needed to avoid duplicate responses
+                            print("🟢 READY - Say your next command...")
+                        else:
+                            print("🟢 READY - Say your command now...")
+                        last_ready_time = time.time()
+                    else:
+                        print("🟡 No clear speech detected, try again...")
+                        print("🟢 READY - Say your command now...")
+                        last_ready_time = time.time()
+                finally:
+                    # Always signal processing finished
+                    self.audio_manager.signal_processing_finished()
                 
                 # Small delay to prevent excessive processing
                 time.sleep(0.2)
@@ -361,6 +421,8 @@ class UniversalSpeechRecognizer:
             except Exception as e:
                 logger.error(f"❌ Error in listening loop: {e}")
                 print("🟡 Audio error, retrying...")
+                # Signal processing finished on error
+                self.audio_manager.signal_processing_finished()
                 time.sleep(1)  # Wait before retrying
     
     def start_listening(self, command_callback: Callable[[str], None]) -> bool:
@@ -394,6 +456,58 @@ class UniversalSpeechRecognizer:
         
         logger.info("🎤 Direct command recognition started!")
         return True
+    
+    def listen_once(self, timeout: float = 30.0) -> Optional[str]:
+        """
+        Listen for a single command (blocking, synchronous)
+        
+        Args:
+            timeout: Maximum time to wait for valid command
+            
+        Returns:
+            Command text or None if timeout/error
+        """
+        if not self.model and not self.load_model():
+            logger.error("❌ Cannot listen - Whisper model not loaded")
+            return None
+        
+        if not self.audio and not self.setup_audio():
+            logger.error("❌ Cannot listen - Audio system not ready")
+            return None
+        
+        logger.debug(f"🎧 Listening for single command (timeout: {timeout}s)")
+        
+        start_time = time.time()
+        
+        while (time.time() - start_time) < timeout:
+            try:
+                # Record audio chunk
+                audio_data = self.record_audio_chunk()
+                if not audio_data:
+                    time.sleep(0.1)
+                    continue
+                
+                # Transcribe audio
+                text = self.transcribe_audio(audio_data)
+                if text:
+                    # Check if it's a valid command
+                    if self.is_valid_command(text):
+                        logger.info(f"🎤 Valid command captured: '{text}'")
+                        return text
+                    else:
+                        logger.debug(f"🚫 Invalid command ignored: '{text}'")
+                        # Continue listening for valid command
+                        continue
+                
+                # Small delay before next attempt
+                time.sleep(0.2)
+                
+            except Exception as e:
+                logger.error(f"❌ Listen once error: {e}")
+                return None
+        
+        logger.warning(f"⏰ Listen once timeout after {timeout}s")
+        return None
     
     def stop_listening(self):
         """Stop listening for speech commands"""
@@ -430,13 +544,13 @@ def demo_speech_recognition():
         print(f"🚀 COMMAND RECEIVED: {command}")
         print(f"📝 Would execute: {command}")
     
-    recognizer = AstroSpeechRecognizer()
+    recognizer = UniversalSpeechRecognizer()
     
     try:
         print("🎤 Starting Astro Speech Recognition Demo")
-        print("🎯 Using Whisper Base model with direct commands")
-        print("💡 Say commands directly (no wake word needed)")
-        print("💡 Example: 'Take me to Mars'")
+        print("🎯 Using Whisper Base model with ASTRO wake word")
+        print("💡 Say 'ASTRO' followed by your command")
+        print("💡 Example: 'ASTRO take me to Mars'")
         print("💡 Press Ctrl+C to stop")
         
         if recognizer.start_listening(handle_command):

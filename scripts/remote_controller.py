@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(__file__)), 'src
 
 from utils.config import setup_project_path, setup_logger
 from remote_controller import SpaceNavigationController, SPEECH_AVAILABLE
+from tts_engine import UniversalTTSEngine
 
 # Setup project path and logging
 setup_project_path()
@@ -210,6 +211,7 @@ def main():
     print("=" * 60)
     
     controller = SpaceNavigationController()
+    tts = UniversalTTSEngine()
     
     # Connect to Gaia Sky first
     print("🔌 Connecting to Gaia Sky...")
